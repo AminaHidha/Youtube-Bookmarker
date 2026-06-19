@@ -17,9 +17,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-_7z!ua&b_qmsxw==0-4*u6sq14h)s))#p*v_dk53-=$7zlusc_'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "youtube-bookmarker-5fqi.onrender.com",
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -90,7 +92,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
